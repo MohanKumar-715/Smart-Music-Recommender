@@ -1,0 +1,48 @@
+
+Spotify Music Recommendation System (MUSICX)
+
+## Project Description
+
+This project is an interactive **Music Recommendation System** built using Machine Learning techniques, leveraging a Kaggle music dataset combined with real-time features accessible via the Spotify API. It recommends songs based on user preferences by analyzing audio feature similarities and clustering songs using machine learning algorithms.
+
+## Key Features
+
+- **User Registration:** Gathers basic user information (name, age, gender, language preference, and favorite song type) for personalized interaction.
+  
+- **Interactive Song Input:** Allows users to input a list of songs they like by specifying the song name, artist, and release year.
+  
+- **Data-Driven Recommendations:**  
+  Utilizes a cleaned and processed dataset from Kaggle containing rich audio features for thousands of songs.  
+  Implements K-Means clustering and cosine similarity on standardized song feature vectors to find songs similar to the user's preferences.
+
+- **Machine Learning Pipeline:**  
+  Integrates preprocessing using `StandardScaler` and clustering with `KMeans` within a pipeline for efficient feature transformation and similarity querying.
+
+- **Similarity Calculation:**  
+  Computes a "mean vector" representing the user's favorite songs in feature space, then recommends new songs closest to this centroid based on cosine distance.
+
+- **Streamlit Web App Interface:**  
+  Provides a clean, interactive frontend allowing users to register, add favorite songs, and receive music recommendations dynamically.
+
+## Technologies Used
+
+- Python libraries: pandas, numpy, scikit-learn, scipy, streamlit
+- Spotify API for extracting song metadata and features
+- Kaggle dataset integration for extensive song data
+- Machine Learning: clustering (K-Means), feature scaling, vector similarity (cosine distance)
+
+## How It Works
+
+1. The user registers and enters personal details and musical preferences.
+2. User inputs favorite songs with details.
+3. The system computes a mean feature vector based on the input songs.
+4. It calculates cosine distances to all songs in the dataset to find closest matches.
+5. Recommends similar songs excluding those already in the user's list.
+
+## Use Cases
+
+- Personalized music discovery tailored to individual taste
+- Enhancing music streaming services with machine learning-driven recommendations
+- Experimentation platform for music data science and recommendation algorithms
+
+***
