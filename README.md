@@ -17,3 +17,4 @@ A simple Streamlit app template for you to modify!
    ```
    $ streamlit run streamlit_app.py
    ```
+Data set link : https://www.kaggle.com/code/vatsalmavani/music-recommendation-system-using-spotify-dataset/input
